@@ -1,5 +1,5 @@
 class Key
-	attr_reader :key
+	attr_accessor :key, :rotation_a
 
 	def initialize(key)
 		@key = key

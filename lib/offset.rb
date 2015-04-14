@@ -1,7 +1,9 @@
 class Offset
-attr_reader :date
+attr_accessor :date, :offset_a
+
 	def initialize(date)
 		@date = date
+		@offset_a = offset_a
 	end
 
 	def square_date
@@ -10,7 +12,7 @@ attr_reader :date
 	end
 
 	def offset_a
-		square_date[-4]
+		@offset_a = square_date[-4]
 	end
 
 	def offset_b
