@@ -1,7 +1,7 @@
 class Key
-	attr_accessor :key, :rotation_a
+	attr_accessor :key
 
-	def initialize(key)
+	def initialize(key = "41521")
 		@key = key
 	end
 

@@ -1,7 +1,7 @@
 class Offset
-attr_accessor :date, :offset_a
+attr_accessor :date
 
-	def initialize(date)
+	def initialize(date = "020315")
 		@date = date
 		@offset_a = offset_a
 	end

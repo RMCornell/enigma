@@ -3,8 +3,7 @@ require_relative 'key'
 
 class Encryptor
 
-
-	def initialize(date, key)
+	def initialize( date = "020315", key = "41521")
 		@date = date
 		@key = key
 		@offset = Offset.new(date)
